@@ -9,6 +9,7 @@ Chart display application created using React and D3.js library
 - chart grid
 - auxiliary lines when hovering over a point
 - changing the colour of a point when it is selected
+- Responsive Web Design
 
 ## Available Scripts
 
