@@ -1,6 +1,6 @@
-# Getting Started with Create React App
+# D3.js task
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Chart display application created using React and D3.js library
 
 ## Available Scripts
 
