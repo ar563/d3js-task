@@ -4,7 +4,7 @@ Chart display application created using React and D3.js library
 
 ## Features
 
-- change the background colour by clicking
+- change the background colour by clicking a button
 - loading animation
 - chart grid
 - auxiliary lines when hovering over a point
