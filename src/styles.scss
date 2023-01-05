@@ -1,0 +1,23 @@
+$shadow: #18191f;
+
+@mixin font {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+}
+
+@mixin card {
+  border: 2px solid $shadow;
+  border-radius: 16px;
+}
+
+p {
+  margin: 3px;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}

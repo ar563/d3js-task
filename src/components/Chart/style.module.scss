@@ -1,0 +1,11 @@
+@import "styles.scss";
+
+.chartWrapper {
+  position: relative;
+  max-width: min-content;
+}
+
+.chartBox {
+  @include card;
+  box-shadow: 0px 4px 0px $shadow;
+}
