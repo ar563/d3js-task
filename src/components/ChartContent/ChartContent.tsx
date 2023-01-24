@@ -1,7 +1,7 @@
-import { useState, useMemo } from "react";
+import { useState } from "react";
 import * as d3 from "d3";
 
-import { AxisBottom, AxisLeft, AuxilliaryLines } from "components";
+import { AuxilliaryLines } from "components";
 import {
   COLORS,
   DEFAULT_POINT_COLOR,
