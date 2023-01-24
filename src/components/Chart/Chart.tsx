@@ -7,16 +7,16 @@ import {
   AxisLeft,
   AxisBottom,
 } from "components";
-import { MARGIN, ChartBasicProps, PointData } from "utils";
+import {
+  MARGIN,
+  ChartBasicProps,
+  PointData,
+  DEFAULT_BACKGROUND_COLOR,
+} from "utils";
 import style from "./style.module.scss";
 import dataset from "data.json";
 
-export const Chart = ({
-  width,
-  height,
-  backgroundColor,
-  ...otherProps
-}: ChartBasicProps) => {
+export const Chart = ({ width, height, ...otherProps }: ChartBasicProps) => {
   const [isLoading, setIsLoading] = useState(true);
   const boundsWidth = width - MARGIN.right - MARGIN.left;
   const boundsHeight = height - MARGIN.top - MARGIN.bottom;
@@ -37,6 +37,7 @@ export const Chart = ({
   const dataLine = d3.line()(pointsData.map((data) => data.coordinate));
 
   useEffect(() => {
+    d3.select("rect").style("fill", DEFAULT_BACKGROUND_COLOR);
     setTimeout(() => setIsLoading(false), 5000);
   }, []);
 
@@ -47,7 +48,7 @@ export const Chart = ({
         <rect
           width={width}
           height={height}
-          fill={backgroundColor}
+          fill={DEFAULT_BACKGROUND_COLOR}
           opacity="1"
         />
         <g
