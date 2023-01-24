@@ -31,5 +31,4 @@ export interface ChartBasicProps {
   width: number;
   height: number;
   handleClick: ({ point }: { point: PointData }) => void;
-  backgroundColor?: string;
 }

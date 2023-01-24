@@ -16,7 +16,6 @@ export const App = () => {
           width={isMobile ? 350 : 700}
           height={isMobile ? 350 : 700}
           handleClick={handlePointClick}
-          backgroundColor={chartState.backgroundColor}
         />
         <Button onClick={handleColorChange}>change color</Button>
       </Wrapper>
