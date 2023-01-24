@@ -70,7 +70,7 @@ export const Chart = ({
               isLoading={isLoading}
             />
           </g>
-          {dataLine && (
+          {dataLine && !isLoading && (
             <path fill="none" stroke="#46B5D1" strokeWidth="1.5" d={dataLine} />
           )}
           <ChartContent
