@@ -30,8 +30,6 @@ export interface AxisLeftProps extends AxisProps {
 export interface ChartBasicProps {
   width: number;
   height: number;
-  firstMarkedPoint?: PointData;
-  secondMarkedPoint?: PointData;
   handleClick: ({ point }: { point: PointData }) => void;
   backgroundColor?: string;
 }
